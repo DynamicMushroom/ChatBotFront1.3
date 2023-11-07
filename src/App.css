@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg');
+    background-size: cover;
+    font-family: 'Monaco', monospace;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #00ff41;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px #00ff41, 0 0 20px #00ff41, 0 0 30px #00ff41;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    overflow-y: auto;
+    border: 2px solid #ff007a;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px #ff007a, 0 0 20px #ff007a, 0 0 30px #ff007a;
+}
+
+.User,
+.Bot {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    width: fit-content;
+    max-width: 80%;
+}
+
+.User {
+    background-color: #00ff41;
+    color: #121212;
+    align-self: flex-end;
+}
+
+.Bot {
+    background-color: #ff007a;
+    color: #121212;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+}
+
+input,
+button {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #121212;
+    color: #00ff41; /* Neon green text color */
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ff41, 0 0 20px #00ff41, 0 0 30px #00ff41;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+    button:hover {
+        background-color: #ff007a; /* Neon pink background on hover */
+        color: #00ff41; /* Keep text color neon green on hover */
+        box-shadow: 0 0 10px #ff007a, 0 0 20px #ff007a, 0 0 30px #ff007a;
+    }
